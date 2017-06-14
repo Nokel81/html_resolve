@@ -1,4 +1,4 @@
-# telegram
+# html_resolve
 Node module to help with importing non-static html
 
 > Named after the older form of long distant communication before telephones and email. Represents the ability to send a message to anyone you want to
@@ -7,17 +7,17 @@ API
 ------
 
 ```javascript
-const telegram = require("telegram");
+const resolve = require("html_resolve");
 
-const telegram_abs = telegram.absolute;
+const resolve_absolute = resolve.absolute;
 
-const telegram_rel = telegram.relative(__dirname);
+const resolve_relative = resolve.relative(__dirname);
 ```
 
-#### telegram(file, data, silent?)
+#### html_resolve(file, data, silent?)
 Returns a string representing the contents of file `file` with all the data hooks contained replaced with the corresponding data in `data`.
 
-Use `telegram_abs` when passing in a absolute path and `telegram_rel` for relative paths.
+Use `resolve_absolute` when passing in a absolute path and `resolve_relative` for relative paths.
 
 `file` is a `String` representing the file path. Both relative and absolute paths work. Though this is intended to be an html file, this is not restricted so that this can be used with any markup file format.
 
