@@ -1,6 +1,6 @@
 {
   "name": "html_resolve",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a package for importing the contents of a file while replacing parts of it specified values",
   "main": "index.js",
   "scripts": {
