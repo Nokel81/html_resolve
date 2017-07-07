@@ -15,7 +15,7 @@ function html_resolve(file, data, silent) {
             if (silent) {
                 return match[0] || "";
             }
-            throw new Error("hook not found");
+            throw new Error("hook not found: " + hook);
         }
         return match[0] + data[hook].toString();
     });
