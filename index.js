@@ -10,7 +10,7 @@ function html_resolve(file, data, silent) {
         throw new Error("EISDIR: illegal operation on a directory, read");
     }
     orig_file = orig_file.toString();
-    let replaced_file = orig_file.replace(/[^\\]{{(.*)}}/g, (match, hook) => {
+    let replaced_file = orig_file.replace(/[^\\]{{(.*?)}}/g, (match, hook) => {
         if (hook in data) {
             return match[0] + data[hook].toString();
         }
